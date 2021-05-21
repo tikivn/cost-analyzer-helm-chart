@@ -516,10 +516,10 @@ nodeExporter:
     ##
     externalIPs: []
 
-    hostPort: 9100
+    hostPort: 9101
     loadBalancerIP: ""
     loadBalancerSourceRanges: []
-    servicePort: 9100
+    servicePort: 9101
     type: ClusterIP
 
 server:
@@ -756,7 +756,7 @@ server:
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
-    # storageClass: "-"
+    storageClass: "standard"
 
     ## Prometheus server data Persistent Volume Binding Mode
     ## If defined, volumeBindingMode: <volumeBindingMode>
